@@ -1,0 +1,21 @@
+.alumniInformation{
+    background-color: rgb(255, 232, 156);
+                    width: 99.5%;
+                    height: 70px;
+                    margin-top: 6px;
+                    margin-bottom: 2px;
+                    align-items: center;
+                    justify-content: center;
+}
+
+.alumniData{
+    background-color: aqua;
+    width: 276px;
+    height:263.8;
+    margin: 40px;
+}
+
+.imgdiv{
+    width: 276px;
+    height:263.8;
+}
