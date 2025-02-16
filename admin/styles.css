@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3; /* Increase the z-index */
+}
+
+.username {
+  color: white;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 4; /* Set a higher z-index value */
+  margin-right: 40px;
+}
+
+.dropdown a {
+  color: white;
+}
+
+.navbar {
+  height: 100%;
+  margin-top: -12px;
+  width: 90px;
+  background-color: #2c3e50;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  transition: width 0.3s;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1; /* Added z-index */
+}
+
+.toggle-btn {
+  font-size: 35px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95px;
+  overflow: hidden;
+  transition: width 0.3s;
+  padding-bottom: 20cm;
+  z-index: 1; /* Added z-index */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nav-list a i {
+  margin-right: 10px;
+}
+
+.nav-list a:hover {
+  background-color: #34495e;
+  width: 100%;
+}
+
+.topnav input[type="text"] {
+  width: 150px; /* Adjust the width as needed */
+}
+
+.content {
+  margin: 20px auto; /* Center the content horizontally */
+  padding: 20px;
+  width: 80%; /* Set width to 80% */
+  background-color: #fff; /* Add background color */
+  border-radius: 8px; /* Add border-radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Add margin-top to center vertically */
+}
+
+
+.futuristic-form {
+  max-width: 400px;
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.navbar.active {
+  width: 200px;
+}
+
+.navbar.active .toggle-btn {
+  margin-left: 140px;
+}
+
+.navbar.active .nav-list {
+  width: 200px;
+}
+
+.navbar.active .nav-list a {
+  padding: 15px 20px;
+}
+
+/* Display .php */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.btn-danger:hover {
+  background-color: red;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+}
+
+td img {
+  border-radius: 50%;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-danger {
+  background-color: tomato;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: red;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+}
+
+.btn-success:hover {
+  background-color: rgb(15, 211, 15);
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+table, th, td {
+  animation: fadeIn 0.5s ease-in-out; /* Add a fadeIn animation */
+}
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  form {
+      width: 80%;
+  }
+}
